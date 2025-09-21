@@ -40,12 +40,14 @@ models:
 
     # Customer project
     customer_rev:
-      +schema: "{{ 'TRANSFORM' }}"  # applies to all models in customer_rev
+      +schema: "{{ 'TRANSFORM' }}"  
       customerrevenue:
-        +schema: "{{ 'SERVE' }}"   # override for final model
+        +schema: "{{ 'SERVE' }}"   
+        +tags: ['daily']  # runs daily
 
     # Employee reporting project
     emp_reporting:
-      +schema: "{{ 'TRANSFORM' }}"  # applies to all models in emp_reporting
+      +schema: "{{ 'TRANSFORM' }}"  
       emp_weekly_sales:
-        +schema: "{{ 'SERVE' }}"   # override for final weekly sales model
+        +schema: "{{ 'SERVE' }}"   
+        +tags: ['weekly']  # runs weekly
