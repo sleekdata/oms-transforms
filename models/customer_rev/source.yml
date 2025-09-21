@@ -1,7 +1,7 @@
 sources:
   - name: landing
-    database: SLEEKMART_OMS_DEV
-    schema: L1_LANDING
+    database: OMS_ANALYTICS
+    schema: LANDING_OMS_CORE
 
     tables:
       - name: customers
