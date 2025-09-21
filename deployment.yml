@@ -5,7 +5,7 @@ jobs:
       integrations:
         - landing   # Triggered after 'landing' connection completes sync
     steps:
-      - name: run models
+      - name: run daily models
         command: dbt run --select +tag:daily
 
   - name: weekly
@@ -13,4 +13,5 @@ jobs:
       type: cron
       entries: ["0 3 * * 0"]  # Runs 3 AM every Sunday
     steps:
-      - command: dbt run --select +tag:weekly
+      - name: run weekly models
+        command: dbt run --select +tag:weekly
