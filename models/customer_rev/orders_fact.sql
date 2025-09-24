@@ -9,7 +9,7 @@ SELECT
     O.StatusCD,
     O.StatusDesc,
     COUNT(DISTINCT O.OrderID) AS OrderCount,
-    SUM(OI.TotalPrice) AS Revenue,
+    SUM(OI.TotalPrice) AS Revenue
 FROM
     {{ ref('orders_stg') }} O
 JOIN
