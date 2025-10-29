@@ -1,0 +1,10 @@
+default:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      user: ''
+      role: ACCOUNTADMIN
+      warehouse: COMPUTE_WH
+      database: SLEEKMART_OMS
+      schema: L1_LANDING
