@@ -18,12 +18,11 @@ clean-targets:
 
 models:
   oms_transforms:
-    +schema: L1_LANDING
     customer_rev:
       customerrevenue:
-        +schema: SERVE
+        +schema: SERVING
         +tags: ['daily']
     emp_reporting:
       emp_weekly_sales:
-        +schema: SERVE
+        +schema: SERVING
         +tags: ['weekly']
