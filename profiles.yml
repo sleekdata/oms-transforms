@@ -1,0 +1,18 @@
+default:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      user: ''
+      role: ACCOUNTADMIN
+      warehouse: COMPUTE_WH
+      database: DEV_OMS
+      schema: SERVING
+
+    prod:
+      type: snowflake
+      user: ''
+      role: ACCOUNTADMIN
+      warehouse: COMPUTE_WH
+      database: PROD_OMS
+      schema: SERVING
