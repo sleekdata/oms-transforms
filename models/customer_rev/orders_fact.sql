@@ -15,4 +15,5 @@ FROM
 JOIN
     {{ ref('orderitems_stg') }} OI ON O.OrderID = OI.OrderID
 
-GROUP BY all
+
+GROUP BY ALL 
